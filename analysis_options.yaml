@@ -1,0 +1,29 @@
+# このファイルは、Dartのコードを静的に解析して、エラーや警告、リントをチェックするアナライザーを設定します。
+# Dartのコードを静的に分析し、エラー、警告、リントをチェックします。
+#
+# アナライザーによって特定された問題は、Dart対応のIDEのUIに表示されます。
+#  IDE (https://dart.dev/tools#ides-and-editors)のUIに表示されます。アナライザーはコマンドラインからも起動できます。
+#  flutter analyze`を実行することで、コマンドラインから呼び出すこともできます。
+
+# 次の行は、Flutterアプリに推奨されるリントのセットを有効にします。
+# パッケージやプラグインに推奨されるリントが有効になります。
+include: package:flutter_lints/flutter.yaml
+
+linter:
+  # このプロジェクトに適用される lint ルールは、以下のセクションでカスタマイズできます。
+  # このプロジェクトに適用されるlintルールは、以下のセクションでカスタマイズできます。
+  # 空のルールを無効にしたり、追加のルールを有効にするように、以下のセクションでカスタマイズできます。利用可能なすべてのlintsのリストとそのドキュメントは
+  # とそのドキュメントのリストは以下で公開されています。
+  # https://dart-lang.github.io/linter/lints/index.html。
+  #
+  # 以下のセクションでは、プロジェクト全体のLintルールを無効にする代わりに
+  # 以下のセクションでプロジェクト全体のLintルールを無効にする代わりに、1行のコードや特定のdartファイルのLintルールを無効にすることもできます。
+  # # ignore: name_of_lint` と `// ignore_for_lint` を使うことで、1行のコードや特定のdartファイルに対して # 抑制することができます。行やファイルの中で
+  # `// ignore_for_file: name_of_lint` 構文を使用することで、単一のコードや # 特定の dart ファイルに対して抑制することができます。
+  # lintを生成します。
+rules:
+  # avoid_print: false # アンコメントで `avoid_print` ルールを無効にします。
+  # prefer_single_quotes: true # アンコメントで `prefer_single_quotes` ルールを有効にします。
+
+# このファイルに関する追加情報は以下の通りです。
+# https://dart.dev/guides/language/analysis-options
